@@ -4,15 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "lite": "lite-server"
+    "start": "concurrently \"npm run tsc:w\" \"npm run lite\" ",
+    "lite": "lite-server",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "lite-server": "^2.3.0"
-  },
   "devDependencies": {
+    "@types/core-js": "^0.9.39",
+    "@types/jasmine": "^2.5.46",
+    "@types/node": "^7.0.12",
+    "concurrently": "^3.4.0",
+    "lite-server": "^2.3.0",
     "typescript": "^2.2.2",
     "typings": "^2.1.0"
   }
