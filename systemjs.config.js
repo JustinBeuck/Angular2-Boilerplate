@@ -28,7 +28,7 @@
     'router-deprecated',
     'upgrade',
   ];
-  // Individual files (~300 requests):
+  // Individual files (~300 requests2):
   function packIndex(pkgName) {
     packages['@angular/'+pkgName] = { main: 'index.js', defaultExtension: 'js' };
   }
