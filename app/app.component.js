@@ -15,7 +15,10 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
-        template: "\n\t\t<div class=\"jumbotron\">\n\t\t\t<h1>Welcome to Our App!</h1>\t\n\t\t</div>\n\n\t"
+        template: "\n\t<header>\n\t\t<nav class=\"navbar navbar-inverse\">\n\t\t\t<div class=\"navbar-header\">\n\t\t\t\t<a href=\"/\" class=\"navbar-brand\">My Angular 2 App!</a>\n\t\t\t</div>\n\t\t</nav>\n\t</header>\n\n\t\t<div class=\"jumbotron\">\n\t\t\t<h1>Welcome to Our App!</h1>\t\n\t\t</div>\n\n\t\t<footer class=\"text-center\">\n\t\t\tCopyright &copy; 2016\n\t\t</footer>\n\t",
+        styles: [
+            ".jumbotron { box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2); }\n\t"
+        ]
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;
